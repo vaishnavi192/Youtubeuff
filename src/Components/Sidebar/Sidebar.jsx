@@ -15,38 +15,38 @@ import cameron from '../../assests/cameron.png'
 import vaishu from '../../assests/vaishu_uff.jpg'
 
 
-const Sidebar = (sidebarsetCategory(0)setCategory) => { 
+const Sidebar = ({sidebar, category, setCategory}) => { 
   return (
       <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>  
       {/* means if sidebar is true then sidebar class will be applied otherwise small-sidebar */}
       {/* //pehle 'sidebar' likha tha ab props pass krne ke baad
     // aisa kiya ofc, active is new classname will define css for it*/}
         <div className='shortcut-links'>
-            <div className={`side-link ${category===0?"active":""}`} on click={()=>setCategory(0)}>
+            <div className={`side-link ${category===0?"active":""}`} onClick={()=>setCategory(0)}>
             <img src={home} alt="" /><p>Home</p>
             </div>
-            <div className={`side-link ${category===20?"active":""}`} on click={()=>setCategory(20)}>
+            <div className={`side-link ${category===20?"active":""}`} onClick={()=>setCategory(20)}>
             <img src={game_icon} alt="" /><p>Gaming</p>
             </div>
-            <div className={`side-link ${category===2?"active":""}`} on click={()=>setCategory(2)}>
+            <div className={`side-link ${category===2?"active":""}`} onClick={()=>setCategory(2)}>
             <img src={automobiles} alt="" /><p>Automobiles</p>
             </div>
-            <div className={`side-link ${category===17?"active":""}`} on click={()=>setCategory(17)}>
+            <div className={`side-link ${category===17?"active":""}`} onClick={()=>setCategory(17)}>
             <img src={sports} alt="" /><p>Sports</p>
             </div>
-            <div className={`side-link ${category===24?"active":""}`} on click={()=>setCategory(24)}>
+            <div className={`side-link ${category===24?"active":""}`} onClick={()=>setCategory(24)}>
             <img src={entertainment} alt="" /><p>Entertainment</p>
             </div>
-            <div className={`side-link ${category===28?"active":""}`} on click={()=>setCategory(28)}>
+            <div className={`side-link ${category===28?"active":""}`} onClick={()=>setCategory(28)}>
             <img src={tech} alt="" /><p>Technology</p>
             </div>
-            <div className={`side-link ${category===10?"active":""}`} on click={()=>setCategory(10)}>
+            <div className={`side-link ${category===10?"active":""}`} onClick={()=>setCategory(10)}>
             <img src={music} alt="" /><p>Music</p>
             </div>
-            <div className={`side-link ${category===22?"active":""}`} on click={()=>setCategory(22)}>
+            <div className={`side-link ${category===22?"active":""}`} onClick={()=>setCategory(22)}>
             <img src={blogs} alt="" /><p>blogs</p>
             </div>
-            <div className={`side-link ${category===25?"active":""}`} on click={()=>setCategory(25)}>
+            <div className={`side-link ${category===25?"active":""}`} onClick={()=>setCategory(25)}>
             <img src={news} alt="" /><p>News</p>
             </div>
             <hr/>

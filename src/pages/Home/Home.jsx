@@ -10,8 +10,6 @@ const Home = (sidebar) => {
     <>
     <Sidebar sidebar={sidebar} category={category} setCategory={setCategory} />
     <div className={`container ${Sidebar?"":'large-container'}`}>
-      {/* we have classname container and if that is false then it will be large-container, 
-      large container happens for small-sidebar*/}
       <Feed category={category} />
       </div>
     </>
